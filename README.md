@@ -1,3 +1,6 @@
+
+## RMB Training website template
+[RMB Training website template](https://dom58.github.io/training-rmb-template/)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Dom58/training-rmb-template/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
