@@ -1,0 +1,157 @@
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+	margin: 0;
+	padding: 0;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: #FFF;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the #section_navbar container. */
+#section_navbar { 
+	margin:0;
+	padding: 0;
+	background-color: #e1e2e2;
+}
+
+#logo {
+	display: block;
+	padding: 10px 20px;
+	float: left;
+	line-height: 10px;
+}
+
+nav:after {
+	content:"";
+	display:table;
+	clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+#section_navbar ul {
+	/* float: right; */
+	padding: 10px;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+	
+/* Positioning the navigation items inline */
+#section_navbar ul li {
+	margin: 0px;
+	float: left;
+	/* background-color: #e1e2e2; */
+}
+
+	
+/* Fisrt Tier Dropdown */
+#section_navbar ul ul li {
+	width: 500px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+.section_in_ul:hover {
+	border-top: 1px solid #ffd500;
+}
+
+.section_in_list1 {
+	position: relative;
+	width: 48%;
+	display: inline-block;
+	border-right: 1px solid white !important;
+}
+
+.section_in_list2 {
+	position: relative;
+	z-index: 1;
+	width: 48%;
+	display: inline-block;
+}
+
+.section_in_list1 li, .section_in_list2 li{
+	padding: -5px;
+}
+
+#section_navbar ul li a {
+	padding: 28px;
+}
+
+/* Styling the links */
+#section_navbar a {
+	display:inline-block;
+	color:#03469e;
+	font-size: 18px;
+	text-decoration:none;
+}
+
+#section_navbar ul li ul {
+	width: auto;
+	background: #e1e2e2; 
+}
+
+#section_navbar #nav_links:hover {
+	background-color: #ffd500;
+	position: relative;
+	border-top-left-radius: 48%;
+	border-bottom-right-radius: 48%;
+	color: #fff;
+	display: block;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+#section_navbar ul ul {
+	display: none;
+	position: absolute;
+}
+	
+/* Display Dropdowns on Hover */
+#section_navbar ul li:hover > ul {
+	display:inherit;
+}
+
+/* Display Dropdowns on Hover */
+#section_navbar ul li > ul li a:hover {
+	color: #00a0eb;
+}
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { 
+	content:  ' +'; 
+}
+
+li > a:only-child:after { 
+	content: '';
+}
+
+#section_container {
+	margin: 20px 20px;
+	/* padding: 5px; */
+}
+
+
+#section_container p {
+	font-size: 16px;
+	height: 75vh;
+}
+
+#section_footer {
+	background-color: #1f2020;
+	padding: 5px;
+	color: white;
+}
