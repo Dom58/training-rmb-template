@@ -13,6 +13,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+p{
+	font-size: 16px;
+}
+
 .toggle,
 [id^=drop] {
 	display: none;
@@ -20,10 +24,13 @@ body {
 
 /* Giving a background-color to the #section_navbar container. */
 #section_navbar { 
+	position: fixed;
+	z-index: 9999;
 	margin:0;
 	padding: 0;
 	background-color: #ffffff;
 	box-shadow: 0px 0px 10px #cacaca;
+	width: 100% !important;
 }
 
 #logo {
@@ -155,6 +162,54 @@ li > a:only-child:after {
 }
 /* End of navbar section */
 
+
+
+/* Start of Sliders */
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+	z-index: 1;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	font-size: 30px !important;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: 0%; opacity: 0; }
+  8.3%,25% { left: 5%; opacity: 1; }
+  33.33%, 100% { left: 90%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: 0%; opacity: 0; }
+  41.63%, 58.29% { left: 5%; opacity: 1; }
+  66.66%, 100% { left: 90%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: 0%; opacity: 0; }
+  74.96%, 91.62% { left: 5%; opacity: 1; }
+  100% { left: 90%; opacity: 0; }
+}
+/* End of Sliders */
+
+
+
+
 #section_container {
 	margin: 20px 20px;
 	height: auto;
@@ -182,7 +237,7 @@ li > a:only-child:after {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 30px;
+	font-size: 20px;
 	margin-top: 5%;
 }
 
@@ -210,6 +265,14 @@ li > a:only-child:after {
 	float: left;
 	top: 0;
 }
+/* 
+.section_content_three #tweets{
+	position: fixed;
+	z-index: 20;
+	margin-top: 400px;
+	width: 33%;
+	top: 50px;
+} */
 
 .news {
 	width: 100%;
@@ -244,6 +307,7 @@ li > a:only-child:after {
 
 .news_img .cover_image {
 	width: 90%;
+	border-radius: 10px;
 }
 
 .news_read_more {
@@ -252,15 +316,95 @@ li > a:only-child:after {
 	border-radius: 4px;
 }
 
-#section_footer {
-	background-color: #1f2020;
+
+/* Visit Rwanda section */
+.visit_rwanda {
+	margin-bottom: 50px;
+}
+
+.visit_rwanda .visit_rwanda_section {
+	width: 32%;
+	float: left;
 	padding: 5px;
-	color: white;
+	margin: 5px;
+	box-shadow: 1px 0px 10px #8b8a8a;
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+.visit_rwanda_text {
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.visit_rwanda_section .visit_img img {
+	width: 100%;
+    height: 250px;
+    object-fit: cover;
+	/* border-radius: 10px; */
+}
+
+
+/* Footer section */
+.footer {
+	background-color: #035b99 !important;
+	float: left;
+	width: 100%;
 	margin-top: 60px;
 }
 
+.bottom_footer {
+	background-color: #18415f !important;
+	float: left;
+	width: 100%;
+	padding: 5px;
+	color: #e4e3e3;
+}
+.bottom_footer p {
+	display: flex;
+	justify-content: center;
+}
+
+#section_footer {
+	background-color: #035b99 !important;
+	margin-top: 60px;
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 10px;
+}
+
+#section_footer .section_footer_content {
+	width: 18%;
+	/* display: inline-block; */
+	float: left;
+	background-color: #035b99 !important;
+	padding: 5px;
+}
+
+#section_footer .section_footer_content h2{
+	color: #ffd500;
+	font-size: 18px;
+}
+
+.footer_contact_us {
+	color: #e4e3e3;
+}
+
+.footer_contact_us ul li {
+	padding: 8px;
+	font-size: 16px;
+}
+
+
+
 /* Responsiviness */
 @media screen and (max-width: 780px) {
+	.logo-img {
+		height: 80px;
+		/* margin-top: 10px; */
+	}
+	
 	#section_navbar ul li ul {
 		width: 100%;
 		box-shadow: none !important;
@@ -316,7 +460,7 @@ li > a:only-child:after {
 	nav ul li {
 		display: block;
 		width: 100%;
-		}
+	}
 
 	nav ul ul .toggle,
 	nav ul ul a {
@@ -329,7 +473,7 @@ li > a:only-child:after {
   
 	nav ul li ul li .toggle,
 	nav ul ul a,
-  nav ul ul ul a{
+  	nav ul ul ul a{
 		padding:14px 20px;	
 		color:#FFF;
 		font-size:17px; 
@@ -380,6 +524,17 @@ li > a:only-child:after {
 		width: 100%;
 		display: block;
 		top: 0;
+	}
+
+
+	/* Visit Rwanda */
+	.visit_rwanda .visit_rwanda_section {
+		width: 100%;
+		margin-top: 5px;
+	}
+	#section_footer .section_footer_content {
+		width: 100%;
+		padding: 2px;
 	}
 
 }
