@@ -2,16 +2,15 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+* {
+	box-sizing: border-box;
+}
 
 body {
 	margin: 0;
 	padding: 0;
 	word-wrap:break-word !important;
 	font-family: 'Open Sans', sans-serif;
-}
-
-a {
-	color: #FFF;
 }
 
 .toggle,
@@ -23,14 +22,20 @@ a {
 #section_navbar { 
 	margin:0;
 	padding: 0;
-	background-color: #e1e2e2;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 10px #cacaca;
 }
 
 #logo {
 	display: block;
-	padding: 10px 20px;
+	padding: 5px 20px;
 	float: left;
 	line-height: 10px;
+}
+
+.logo-img {
+	height: 70px;
+	/* margin-top: 10px; */
 }
 
 nav:after {
@@ -51,7 +56,7 @@ nav:after {
 	
 /* Positioning the navigation items inline */
 #section_navbar ul li {
-	margin: 0px;
+	margin: 5px;
 	float: left;
 	/* background-color: #e1e2e2; */
 }
@@ -69,26 +74,25 @@ nav:after {
 	border-top: 1px solid #ffd500;
 }
 
+.section_in_list1, .section_in_list2 {
+	width: 49.4%; 
+	white-space: normal;
+	float: left;
+	top: 0;
+	line-height: 1px;
+	margin: 0 0 1rem 0;
+}
+
 .section_in_list1 {
-	position: relative;
-	width: 48%;
-	display: inline-block;
-	border-right: 1px solid white !important;
+	border-right: 1px solid #cacaca !important;
 }
 
-.section_in_list2 {
-	position: relative;
-	z-index: 1;
-	width: 48%;
-	display: inline-block;
-}
-
-.section_in_list1 li, .section_in_list2 li{
-	padding: -5px;
+.section_in_list1 li:hover, .section_in_list2 li:hover {
+	border-left: 1px solid #cacaca !important;
 }
 
 #section_navbar ul li a {
-	padding: 28px;
+	padding: 15px;
 }
 
 /* Styling the links */
@@ -101,18 +105,29 @@ nav:after {
 
 #section_navbar ul li ul {
 	width: auto;
-	background: #e1e2e2; 
+	background: #fff;
+	box-shadow: 1px 1px 5px #cacaca;
 }
 
 #section_navbar #nav_links:hover {
 	background-color: #ffd500;
 	position: relative;
-	border-top-left-radius: 48%;
-	border-bottom-right-radius: 48%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
 	color: #fff;
 	display: block;
+	/* transition: .1s ease-in-out; */
 }
 
+.nav_links:hover {
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 1% !important;
+	background-color: #ffd500;
+}
+
+.nav_links:hover .investment {
+	color: white !important;
+}
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 #section_navbar ul ul {
@@ -138,20 +153,240 @@ li > a:after {
 li > a:only-child:after { 
 	content: '';
 }
+/* End of navbar section */
 
 #section_container {
 	margin: 20px 20px;
+	height: auto;
 	/* padding: 5px; */
 }
 
-
 #section_container p {
 	font-size: 16px;
-	height: 75vh;
+}
+
+.section_banner_container {
+	height: 60vh; 
+	padding: 100px 15px;
+    color: #ffffff;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.6)
+    ), url('../images/kcc.jpg') no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    background-size: cover;
+    background-position: center;
+}
+
+.section_banner_container p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	margin-top: 5%;
+}
+
+.dynamic_section_content {
+	width: 100%;
+	display: block;
+}
+
+.dynamic_section_content::after {
+ /* Clear floats after the columns */
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.panel_header {
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.section_content_one, .section_content_two, .section_content_three {
+	width: 33%;
+	float: left;
+	top: 0;
+}
+
+.news {
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+}
+
+.news_text a {
+	color: black !important;
+	text-decoration: none;
+}
+
+.news_text a:hover {
+	color: #00a0eb !important;
+}
+
+.news .news_img {
+	width: 33%;
+	display: inline-block;
+}
+
+.news .news_img:hover {
+	cursor: pointer;
+}
+
+.news .news_text {
+	display: inline-block;
+  	align-items: flex-start;
+	width: 60%;
+	flex-direction: row;
+}
+
+.news_img .cover_image {
+	width: 90%;
+}
+
+.news_read_more {
+	border: 2px solid #00a0eb;
+	padding: 5px;
+	border-radius: 4px;
 }
 
 #section_footer {
 	background-color: #1f2020;
 	padding: 5px;
 	color: white;
+	margin-top: 60px;
+}
+
+/* Responsiviness */
+@media screen and (max-width: 780px) {
+	#section_navbar ul li ul {
+		width: 100%;
+		box-shadow: none !important;
+	}
+
+	.section_in_list1, .section_in_list2 {
+		width: 100%;
+		display: block;
+		line-height: 19px;
+		background: #fff !important;
+		padding: 5px;
+	}
+
+	.section_in_list1 li:hover, .section_in_list2 li:hover {
+		border-left: none !important;
+	}
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		padding:14px 10px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 40px;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #000; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+	}
+
+	#section_navbar #nav_links:hover {
+		background-color: transparent;
+		position: relative;
+		border-top-left-radius: none;
+		border-bottom-right-radius: none;
+		color: black;
+	}
+
+	.nav_links:hover .investment {
+		color: black !important;
+		background-color: transparent;
+	}
+
+	.section_content_one, .section_content_two, .section_content_three {
+		width: 100%;
+		display: block;
+		top: 0;
+	}
+
+}
+
+@media screen and (max-width: 420px) {
+	.news .news_img, .news .news_text {
+		width: 100%;
+		display: block;
+	}
 }

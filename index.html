@@ -9,27 +9,36 @@
 </head>
 <body>
     <nav id="section_navbar">
-        <div id="logo"><img src="https://rdb.rw/wp-content/uploads/2019/12/rdb.png" alt="Gov Image"></div>
+        <div id="logo"><img src="images/logo.png" alt="Gov Image" class="logo-img"></div>
 
-        <label for="drop" class="toggle">Menu</label>
+        <label for="drop" class="toggle" style="color: white; margin-top: -65px;">
+            <svg viewBox="0 0 100 80" width="40" height="40"  style="color: white;">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+        </label>
         <input type="checkbox" id="drop" />
         <ul class="menu">
             <li><a href="#" id="nav_links">Home</a></li>
             <li><a href="#" id="nav_links">Export</a></li> 
-            <li id="nav_links">
+            <li id="nav_links" class="nav_links">
                 <!-- First Tier Drop Down -->
-                <label for="drop-1" class="toggle">Investment ></label>
-                <a href="#">Investment</a>
+                <a href="#" class="investment">Investment</a>
                 <input type="checkbox" id="drop-1"/>
                 <ul class="section_in_ul">
                     <div class="section_in_list1">
                         <li><a href="#">Why Invest In Rwanda</a></li>
                         <li><a href="#">Visit Rwanda</a></li>
+                        <li><a href="#">Does Business Here</a></li>
+                        <!-- <li><a href="#" style="color: white;">-</a></li> -->
                     </div>
 
                     <div class="section_in_list2">
                         <li><a href="#">Investment Oportunities</a></li>
-                        <li><a href="#">Business Registration</a></li>
+                        <li><a href="#">Energy</a></li>
+                        <li><a href="#">Manifacturing</a></li>
+                        <li><a href="#">Infastructure</a></li>
                     </div>
                 </ul> 
 
@@ -37,12 +46,116 @@
         </ul>
     </nav>
 
-    <div id="section_container">
-        <p>Container will be desplayed here...</p>
+    <div class="section_banner_container">
+        <p>Mining community upbeat as Rwandair opens route to Lubumbashi</p>
     </div>
 
-    <div id="section_footer">
-        <p>Footer will be desplayed here...</p>
+    <div id="section_container">
+        <div class="dynamic_section_content">
+            <div class="section_content_one">
+                <div class="panel_header">
+                    Latest News
+                </div>
+                <div class="news">
+                    <div class="news_img">
+                        <img src="images/tedros.jpg" alt="Tedros" class="cover_image">
+                    </div>
+                    <div class="news_text">
+                        <p>
+                            <a href="#">
+                                Public announcements & Publications Public announcements & Publications...
+                            </a>
+                            <br>
+                        </p>
+                        <p><a href="#" class="news_read_more">Read more</a></p>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <div class="news_img">
+                        <img src="images/tedros.jpg" alt="Tedros" class="cover_image">
+                    </div>
+                    <div class="news_text">
+                        <p>
+                            <a href="#">
+                                Public announcements & Publications Public announcements & Publications...
+                            </a>
+                            <br>
+                        </p>
+                        <p><a href="#" class="news_read_more">Read more</a></p>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <div class="news_img">
+                        <img src="images/tedros.jpg" alt="Tedros" class="cover_image">
+                    </div>
+                    <div class="news_text">
+                        <p>
+                            <a href="#">
+                                Public announcements & Publications Public announcements & Publications...
+                            </a>
+                            <br>
+                        </p>
+                        <p><a href="#" class="news_read_more">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_content_two">
+                <div class="panel_header">
+                    Public announcements & Publications
+                </div>
+                <div class="news">
+                    <div class="news_text">
+                        <p>
+                            <strong>>></strong > 
+                            <a href="#">
+                                Public announcements & Publications Public announcements & Publications Public announcements...
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news_text">
+                        <p>
+                            <strong>>></strong >
+                            <a href="#">
+                                Public announcements & Publications Public announcements & Publications Public announcements...
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news_text">
+                        <p>
+                            <strong>>></strong> 
+                            <a href="#">
+                                Public announcements & Publications Public announcements & Publications Public announcements...
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_content_three">
+                <div class="panel_header">
+                    Latest Tweets
+                </div>
+                <div class="news">
+                    <a class="twitter-timeline" data-height="450" data-theme="light" href="https://twitter.com/Mines_Rwanda?ref_src=twsrc%5Etfw">Tweets by Rwanda Mining Board</a>
+
+                    <a href="https://twitter.com/Mines_Rwanda?ref_src=twsrc%5Etfw" class="twitter-follow-button mt-3" data-show-count="true">Follow @Mines_Rwanda</a>
+                    
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- <div id="section_footer">
+        <p>Footer will be desplayed here...</p>
+    </div> -->
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
