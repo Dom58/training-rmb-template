@@ -529,11 +529,11 @@ li > a:only-child:after {
 
 	/* Visit Rwanda */
 	.visit_rwanda .visit_rwanda_section {
-		width: 100%;
+		width: 48%;
 		margin-top: 5px;
 	}
 	#section_footer .section_footer_content {
-		width: 100%;
+		width: 48%;
 		padding: 2px;
 	}
 
@@ -543,5 +543,15 @@ li > a:only-child:after {
 	.news .news_img, .news .news_text {
 		width: 100%;
 		display: block;
+	}
+
+	/* Visit Rwanda */
+	.visit_rwanda .visit_rwanda_section {
+		width: 100%;
+		margin-top: 5px;
+	}
+	#section_footer .section_footer_content {
+		width: 100%;
+		padding: 2px;
 	}
 }
