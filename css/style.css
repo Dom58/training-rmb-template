@@ -1,7 +1,6 @@
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 * {
 	box-sizing: border-box;
 }
@@ -10,7 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 	word-wrap:break-word !important;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 }
 
 p{
@@ -358,26 +357,15 @@ li > a:only-child:after {
 
 /* Footer section */
 .footer {
-	background-color: #035b99 !important;
+	background-color: #035b99;
+  	background-image: linear-gradient(to bottom, #035b99, #0e3c5e);
 	float: left;
 	width: 100%;
 	margin-top: 60px;
 }
 
-.bottom_footer {
-	background-color: #18415f !important;
-	float: left;
-	width: 100%;
-	padding: 5px;
-	color: #e4e3e3;
-}
-.bottom_footer p {
-	display: flex;
-	justify-content: center;
-}
-
 #section_footer {
-	background-color: #035b99 !important;
+	/* background-color: #035b99 !important; */
 	margin-top: 60px;
 	position: relative;
 	display: block;
@@ -387,10 +375,21 @@ li > a:only-child:after {
 
 #section_footer .section_footer_content {
 	width: 18%;
-	/* display: inline-block; */
 	float: left;
-	background-color: #035b99 !important;
 	padding: 5px;
+}
+
+.bottom_footer {
+	background-color: #184466;
+	float: left;
+	width: 100%;
+	padding: 5px;
+	color: #e4e3e3;
+}
+
+.bottom_footer p {
+	display: flex;
+	justify-content: center;
 }
 
 #section_footer .section_footer_content h2{
