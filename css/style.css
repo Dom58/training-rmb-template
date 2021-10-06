@@ -31,6 +31,7 @@ p{
 	background-color: #ffffff;
 	box-shadow: 0px 0px 10px #cacaca;
 	width: 100% !important;
+	top: 0;
 }
 
 #logo {
@@ -124,6 +125,16 @@ nav:after {
 	color: #fff;
 	display: block;
 	/* transition: .1s ease-in-out; */
+}
+
+.active {
+	/* background-color: #ffd500; */
+	position: relative;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	color: black !important;
+	display: block;
+	border-bottom: 2px solid #ffd500;
 }
 
 .nav_links:hover {
@@ -396,6 +407,31 @@ li > a:only-child:after {
 	font-size: 16px;
 }
 
+/* Single Column template Learning of 06/10/2021 */
+.single_column {
+	height: auto; 
+	padding: 100px 15px;
+}
+
+
+/* Single Column template Learning of 06/10/2021 */
+.single_column {
+	width: 100%;
+	height: auto; 
+	padding: 100px 15px;
+}
+
+.double_column {
+	height: auto; 
+	padding: 100px 15px;
+	width: 100%;
+}
+
+.double_column_left, .double_column_right {
+	width: 49.5%;
+	float: left;
+	padding: 5px;
+}
 
 
 /* Responsiviness */
@@ -444,11 +480,11 @@ li > a:only-child:after {
 	/* Stylinf the toggle lable */
 	.toggle {
 		display: block;
-		padding:14px 10px;	
+		padding: 14px 10px;	
 		color:#FFF;
-		font-size:17px;
-		text-decoration:none;
-		border:none;
+		font-size: 17px;
+		text-decoration: none;
+		border: none;
 	}
 
 	/* Display Dropdown when clicked on Parent Lable */
@@ -487,7 +523,7 @@ li > a:only-child:after {
 	/* Hide Dropdowns by Default */
 	nav ul ul {
 		float: none;
-		position:static;
+		position: static;
 		color: #ffffff;
 	}
 		
@@ -526,7 +562,6 @@ li > a:only-child:after {
 		top: 0;
 	}
 
-
 	/* Visit Rwanda */
 	.visit_rwanda .visit_rwanda_section {
 		width: 48%;
@@ -550,8 +585,15 @@ li > a:only-child:after {
 		width: 100%;
 		margin-top: 5px;
 	}
+
 	#section_footer .section_footer_content {
 		width: 100%;
 		padding: 2px;
+	}
+
+	.double_column_left, .double_column_right {
+		width: 99.9%;
+		float: left;
+		padding: 5px;
 	}
 }

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Columns Template</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="section_navbar">
+        <div id="logo"><img src="images/logo.png" alt="Gov Image" class="logo-img"></div>
+
+        <label for="drop" class="toggle" style="color: white; margin-top: -65px;">
+            <svg viewBox="0 0 100 80" width="40" height="40"  style="color: white;">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+        </label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="index.html" id="nav_links">Home</a></li>
+            <li><a href="#" id="nav_links">Export</a></li> 
+            <li id="nav_links" class="nav_links">
+                <!-- First Tier Drop Down -->
+                <a href="#" class="investment">Investment</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul class="section_in_ul">
+                    <div class="section_in_list1">
+                        <li><a href="#">Why Invest In Rwanda</a></li>
+                        <li><a href="#">Visit Rwanda</a></li>
+                        <li><a href="#">Does Business Here</a></li>
+                        <!-- <li><a href="#" style="color: white;">-</a></li> -->
+                    </div>
+
+                    <div class="section_in_list2">
+                        <li><a href="#">Investment Oportunities</a></li>
+                        <li><a href="#">Energy</a></li>
+                        <li><a href="#">Manifacturing</a></li>
+                        <li><a href="#">Infastructure</a></li>
+                    </div>
+                </ul> 
+            </li>
+            <li><a href="singleColumn.html" id="nav_links">Single Column</a></li>
+            <li><a href="doubleColumns.html" id="nav_links" class="active">Double Columns</a></li>
+        </ul>
+    </nav>
+
+    <div id="section_container">
+        <div class="dynamic_section_content">
+            <div class="double_column">
+                <div class="double_column_left">
+                    <h2>Title of Left Column</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', 
+                        making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a 
+                        search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, 
+                        sometimes on purpose (injected humour and the like).
+                    </p>
+                </div>
+
+                <div class="double_column_right">
+                    <h2>Title of Right Column</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', 
+                        making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a 
+                        search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, 
+                        sometimes on purpose (injected humour and the like).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div id="section_footer">
+            <div class="section_footer_content">
+                <h2>About RMB</h2>
+                <div class="footer_contact_us">
+                    <ul type="circle">
+                        <li>Background</li>
+                        <li>Mission & Vision</li>
+                        <li>Services</li>
+                        <li>Senior Management</li>
+                        <li>SRMB Organisation Structure</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section_footer_content">
+                <h2>Investment Area</h2>
+                <div class="footer_contact_us">
+                    <ul type="circle">
+                        <li>Investment Opportunities</li>
+                        <li>Oil and Gas</li>
+                        <li>Mining Service Providers</li>
+                        <li>Investment incentives</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section_footer_content">
+                <h2>Key Sectors</h2>
+                <div class="footer_contact_us">
+                    <ul type="circle">
+                        <li>Mining</li>
+                        <li>Earthquake info</li>
+                        <li>Oil and Gas</li>
+                    </ul>
+                </div>
+                
+                <h2>Media Centre</h2>
+                <div class="footer_contact_us">
+                    <ul type="circle">
+                        <li>News</li>
+                        <li>Upcoming Events</li>
+                        <li>Press Release</li>
+                        <li>Photo Gallery</li>
+                        <li>Video Gallery</li>
+                        <li>Annoucement</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section_footer_content">
+                <h2>Online Services</h2>
+                <div class="footer_contact_us">
+                    <ul type="circle">
+                        <li>Mineral Certification Information System</li>
+                        <li>Download Mobile Apps for scan QR code to export Certificate</li>
+                        <li>Smart Administration System</li>
+                        <li>Environmental Rehabilitation Fees Information system</li>
+                        <li>RMB Cloud and Data collaboration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section_footer_content">
+                <h2>Quick Links</h2>
+                <div class="footer_contact_us">
+                    <ul type="circle">
+                        <li>e-Recruitment</li>
+                        <li>Employee Self-Service Portal</li>
+                        <li>Umucyo</li>
+                        <li>Rwanda Development Board</li>
+                        <li>Rwanda Revenue Authority</li>
+                        <li>Rwanda information society Authority</li>
+                        <li>AOS</li>
+                        <li>BSC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom_footer">
+        <p>Copyright -  Rwanda Mines Petroleum and Gas board  ©&nbsp; <span id="newDate"> </span></p>
+    </div>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
